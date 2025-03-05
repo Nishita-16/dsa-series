@@ -70,5 +70,5 @@ class Solution {
         return resarr2;
     }
 }
-//tc:O(n)
-//sc:O(n)
+//tc:O(n+m)
+//sc:O(n+m)
