@@ -1,3 +1,27 @@
+//leetcode potd 05/05/2025
+//link:https://leetcode.com/problems/count-total-number-of-colored-cells/?envType=daily-question&envId=2025-03-05
+class Solution {
+    public long coloredCells(int n) {
+        long x=0;
+        while(n!=1){
+            x+= (--n)*4;
+        }
+        return x+1;
+    }
+}
+//tc:O(n)
+//sc:O(n)
+//or tc:O(n)
+class Solution {
+    public long coloredCells(int n) {
+        long x=0;
+        while(n!=1){
+            x+= (--n)*4;
+        }
+        return x+1;
+    }
+}
+
 //que 1
 //problem link:
 class Solution {
