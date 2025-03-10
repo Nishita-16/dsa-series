@@ -16,6 +16,7 @@ class Solution {
         return (n==1);
     }
 }
+approch:check if it is divisble by any other than 2,3,5 and return accordingly 
 // problem2:-
 // https://www.geeksforgeeks.org/problems/reverse-bits3556/1?page=1&category=Mathematical&difficulty=Easy&sortBy=submissions
 class Solution {
