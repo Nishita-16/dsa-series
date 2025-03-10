@@ -23,6 +23,7 @@ class Solution {
         return arr;
     }
 }
+approach:check for how many element are smaller than pivot and arrange the element from that
 //sc:O(N)
 //tc:O(N)
 que 2
