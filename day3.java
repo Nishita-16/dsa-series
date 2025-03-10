@@ -17,6 +17,7 @@ class Solution {
         return(num==number);
     }
 }
+approach:taking lcm and check for 0 and 1
 //sc:O(logn)
 //tc:O(logn)
 // que 2
