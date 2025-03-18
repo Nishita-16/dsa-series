@@ -40,3 +40,23 @@ class Solution {
 sc:O(1)
 tc:O(log(m*n))
 approach:used binary search to check if element is present or not
+que 3
+problem:search in 2d matrix - 2
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int i,j,row=0,col=matrix[0].length-1,mid;
+        int low=0,high=row*col-1;
+        while(col>=0 && row<=matrix.length-1){
+            if(matrix[row][col]==target){
+                return true;
+            }
+            else if(target<matrix[row][col]) {
+                col--;
+            } 
+            else if(target>matrix[row][col]) {
+                row++;
+            }
+        }
+        return false;
+    }
+}
