@@ -20,3 +20,28 @@ class Solution {
         return dummy.next;
     }
 }
+problem 2:https://leetcode.com/problems/reverse-nodes-in-k-group/description/
+class Solution {
+    public ListNode reverse(ListNode start,ListNode end){
+        ListNode cur=start,prev=null;
+        while(cur!=end){
+            ListNode temp=cur.next;
+            cur.next=prev;
+            prev=cur;
+            cur=temp;
+        }
+        return prev;
+    }
+    public ListNode reverseKGroup(ListNode head, int k) {
+        int i=0;
+        ListNode temp=head;
+        while(temp!=null && i<k){
+            temp=temp.next;
+            i++;
+        }
+        if(i<k)return head;
+        ListNode newhead=reverse(head,temp);
+        head.next=reverseKGroup(temp,k);
+        return newhead;
+    }
+}
